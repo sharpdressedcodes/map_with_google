@@ -4,7 +4,7 @@
 
 	<Description about="urn:mozilla:install-manifest">
 
-		<em:id>{74591c01-3a7f-469e-ad4e-5d8d708dc4c5}</em:id>
+		<em:id>{9F730E3B-E9A1-4AFD-A7FA-57B7124076EE}</em:id>
 		<em:name>Map with Google</em:name>
 		<em:version>0.7</em:version>
 		<em:description>Highlight an address on a web page, right click the mouse and select "Map with Google" from the context, a Google Maps tab will open with the searched location.</em:description>
