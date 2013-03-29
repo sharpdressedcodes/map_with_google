@@ -12,7 +12,7 @@
 <groupbox align="center" orient="horizontal">
 <vbox>
   <text value="Map with Google" style="font-weight: bold; font-size: x-large;"/>
-  <text value="ver. 0.7"/>
+  <text value="ver. 0.7.2"/>
   <separator class="thin"/>
   <text value="Modified By:" style="font-weight: bold;"/>
   <text value="Greg Kappatos" class="url"

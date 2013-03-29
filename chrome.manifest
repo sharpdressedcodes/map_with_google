@@ -1,6 +1,7 @@
 
 overlay	chrome://browser/content/browser.xul	chrome://suricattagmap/content/suricattagmapOverlay.xul
 overlay	chrome://navigator/content/navigator.xul	chrome://suricattagmap/content/suricattagmapOverlay.xul
-content	suricattagmap	jar:chrome/suricattagmap.jar!/content/suricattagmap/
 
-skin	suricattagmap	classic/1.0	jar:chrome/suricattagmap.jar!/skin/classic/suricattagmap/
+content	suricattagmap	chrome/content/suricattagmap/
+
+skin	suricattagmap	classic/1.0	chrome/skin/classic/suricattagmap/
