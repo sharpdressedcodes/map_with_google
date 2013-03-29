@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<overlay id="celebritySearchOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript">
+
+<![CDATA[
+
+	
+
+var suricattagmap = new Object();
+
+suricattagmap.locateOnGMap = function()
+{
+
+	//alert("selection=" + content.document.getSelection());
+	var celebName=content.document.getSelection().replace(/\s/g,' ').replace(/  {2,}/g,' ').replace(/ $|^ /g,'');
+	//alert("celebName=" + celebName);
+	if (celebName == "") 
+	{
+		alert("Please select the address first");
+		return;
+	}
+	var celebString="q=" + escape(celebName);
+	//alert("celebString=" + celebString);
+
+	var tBrowser = top.document.getElementById("content");
+	//alert("browser=" + tBrowser);
+	var tab = tBrowser.addTab("http://maps.google.com/maps?" + celebString);
+	//alert("opened tab")
+	tBrowser.selectedTab = tab;
+}
+	
+
+
+window.addEventListener("load", suricattagmap.gmapInit, true);
+
+// hides the item when appropriate (use same logic as for Back, Stop etc.)
+// script written by Stephen Clavering, used in his goHome extension
+
+suricattagmap.gmapInit = function() {
+  document.getElementById("contentAreaContextMenu").addEventListener("popupshowing",suricattagmap.gmapHide,false);
+}
+
+suricattagmap.gmapHide = function() {
+  var cm = gContextMenu;
+  document.getElementById("suricattagmap").hidden = !cm.isTextSelected;
+}
+
+
+]]>
+
+</script>
+
+<popup id="contentAreaContextMenu">
+  <menuitem id="suricattagmap" label="Map with Google" accesskey="G" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();"/>
+</popup>
+
+</overlay>

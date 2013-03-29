@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{74591c01-3a7f-469e-ad4e-5d8d708dc4c5}</em:id>
+		<em:name>Map with Google</em:name>
+		<em:version>0.6</em:version>
+		<em:description>Highlight an address on a web page, right click the mouse and select "Map with Google" from the context, a Google Maps tab will open with the searched location.</em:description>
+		<em:creator>Archibald Packwood</em:creator>
+		<em:homepageURL>http://veralab.com/plugins</em:homepageURL>
+		<em:iconURL>chrome://suricattagmap/skin/counts.png</em:iconURL>
+		<em:aboutURL>chrome://suricattagmap/content/about.xul</em:aboutURL>
+		<!--<em:updateURL>http://veralab.com/plugins/locateOnGMap/update.rdf</em:updateURL>-->
+
+		<em:file>
+			<Description about="urn:mozilla:extension:file:suricattagmap.jar">
+				<em:package>content/suricattagmap/</em:package>
+				<em:skin>skin/classic/suricattagmap/</em:skin>
+			</Description>
+		</em:file>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>3.6.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>
