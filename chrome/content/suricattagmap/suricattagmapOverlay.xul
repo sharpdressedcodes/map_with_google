@@ -14,22 +14,20 @@ var suricattagmap = new Object();
 suricattagmap.locateOnGMap = function()
 {
 
-	//alert("selection=" + content.document.getSelection());
-	var celebName=content.document.getSelection().replace(/\s/g,' ').replace(/  {2,}/g,' ').replace(/ $|^ /g,'');
-	//alert("celebName=" + celebName);
-	if (celebName == "") 
-	{
-		alert("Please select the address first");
-		return;
-	}
-	var celebString="q=" + escape(celebName);
-	//alert("celebString=" + celebString);
+	var textSelection=content.document.getSelection();
+	//var cleanedSelection=textSelection.replace(/\s/g,' ').replace(/  {2,}/g,' ').replace(/ $|^ /g,'');
 
-	var tBrowser = top.document.getElementById("content");
-	//alert("browser=" + tBrowser);
-	var tab = tBrowser.addTab("http://maps.google.com/maps?" + celebString);
-	//alert("opened tab")
-	tBrowser.selectedTab = tab;
+	if (textSelection!=''){
+		var url='http://maps.google.com/maps?q='+escape(textSelection);
+
+		/*
+		 relatedToCurrent:true means the new tab will open up
+		 straight after the current tab - remove to open at end of tabs
+		*/
+
+		var tab = getBrowser().addTab(url,{relatedToCurrent:true});
+		getBrowser().selectedTab = tab;
+	}
 }
 	
 
@@ -47,7 +45,6 @@ suricattagmap.gmapHide = function() {
   var cm = gContextMenu;
   document.getElementById("suricattagmap").hidden = !cm.isTextSelected;
 }
-
 
 ]]>
 
