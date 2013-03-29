@@ -30,4 +30,8 @@
 - the provisions above, a recipient may use your version of this file under
 - the terms of any one of the MPL, the GPL or the LGPL.
 -
+- Updated by Greg Kappatos. v0.7->
+-
+- Start 29 Mar 2013
+-
 - ***** END LICENSE BLOCK ***** -->

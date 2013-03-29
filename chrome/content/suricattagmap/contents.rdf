@@ -20,12 +20,12 @@
 	</RDF:Seq>
 
 	<RDF:Description RDF:about="urn:mozilla:package:suricattagmap"
-		chrome:displayName="Buy it online"
-		chrome:author="Archibald Packwood"
-		chrome:authorURL="http://veralab.com/plugins"
+		chrome:displayName="Map with Google"
+		chrome:author="Greg Kappatos"
+		chrome:authorURL="http://websiteconect.com.au"
 		chrome:name="suricattagmap"
 		chrome:extension="true"
-		chrome:description="Select a product name and see who sells the product online.">
+		chrome:description="Select some text, right click and then 'Map with Google'.">
 	</RDF:Description>
 
 </RDF:RDF>

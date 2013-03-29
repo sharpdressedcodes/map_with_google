@@ -6,13 +6,12 @@
 
 		<em:id>{74591c01-3a7f-469e-ad4e-5d8d708dc4c5}</em:id>
 		<em:name>Map with Google</em:name>
-		<em:version>0.6</em:version>
+		<em:version>0.7</em:version>
 		<em:description>Highlight an address on a web page, right click the mouse and select "Map with Google" from the context, a Google Maps tab will open with the searched location.</em:description>
-		<em:creator>Archibald Packwood</em:creator>
-		<em:homepageURL>http://veralab.com/plugins</em:homepageURL>
+		<em:creator>Greg Kappatos</em:creator>
+		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
 		<em:iconURL>chrome://suricattagmap/skin/counts.png</em:iconURL>
 		<em:aboutURL>chrome://suricattagmap/content/about.xul</em:aboutURL>
-		<!--<em:updateURL>http://veralab.com/plugins/locateOnGMap/update.rdf</em:updateURL>-->
 
 		<em:file>
 			<Description about="urn:mozilla:extension:file:suricattagmap.jar">

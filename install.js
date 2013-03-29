@@ -6,8 +6,8 @@ var XpiInstaller = {
 	// --- Editable items begin ---
 	extFullName: 'Buy it online', // The name displayed to the user (don't include the version)
 	extShortName: 'suricattagmap', // The leafname of the JAR file (without the .jar part)
-	extVersion: '0.6',
-	extAuthor: 'Archibald Packwood',
+	extVersion: '0.7',
+	extAuthor: 'Greg Kappatos',
 	extLocaleNames: null, // e.g. ['en-US', 'en-GB']
 	extSkinNames: null, // e.g. ['classic', 'modern']
 	extPostInstallMessage: 'Success! Please restart your browser to finish the installation.', // Set to null for no post-install message
