@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 
+<?xml-stylesheet href="chrome://suricattagmap/skin/suricattagmap.css" type="text/css"?>
+
 <!DOCTYPE overlay SYSTEM "chrome://suricattagmap/locale/suricattagmap.dtd" >
 
 <overlay id="celebritySearchOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
@@ -7,7 +9,7 @@
   <script type="application/x-javascript" src="main.js"/>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="suricattagmap" label="&map_with_google.label;" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();" accesskey="G"/>
+    <menuitem id="suricattagmap" label="&map_with_google.label;" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();" accesskey="G" class="menuitem-iconic"/>
   </popup>
 
 </overlay>
