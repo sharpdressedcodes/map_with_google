@@ -10,6 +10,11 @@
 		<em:iconURL>chrome://suricattagmap/skin/googlemaps36.png</em:iconURL>
 		<em:aboutURL>chrome://suricattagmap/content/about.xul</em:aboutURL>
 
+		<em:name>Map with Google</em:name>
+		<em:description>Highlight an address on a web page, right click the mouse and select "Search Google Maps" from the menu, a Google Maps tab will open with the searched location.</em:description>
+		<em:creator>Greg Kappatos</em:creator>
+		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
+
 		<em:localized>
 		<Description>
 		<em:locale>en-US</em:locale>
