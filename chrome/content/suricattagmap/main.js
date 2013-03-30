@@ -30,10 +30,15 @@ window.addEventListener("contextmenu", function(e) {
       suricattagmap.default_menutext=menu.getAttribute('label');
 
     var textSelection=content.document.getSelection().toString();
+    var compactedText=textSelection.substr(0,15);
+
+    if (compactedText.length!=textSelection.length)
+      compactedText+='...';
+
     menu.hidden=(textSelection.length==0);
 
     if (!menu.hidden && suricattagmap.default_menutext!='')
-      menu.setAttribute('label',suricattagmap.default_menutext+'"'+textSelection+'"');
+      menu.setAttribute('label',suricattagmap.default_menutext+'"'+compactedText+'"');
 
 }, false);
 
