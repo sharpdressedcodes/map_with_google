@@ -1,7 +1,9 @@
 
-overlay	chrome://browser/content/browser.xul	chrome://suricattagmap/content/suricattagmapOverlay.xul
-overlay	chrome://navigator/content/navigator.xul	chrome://suricattagmap/content/suricattagmapOverlay.xul
+overlay	chrome://browser/content/browser.xul	chrome://suricattagmap/content/suricattagmap.xul
+overlay	chrome://navigator/content/navigator.xul	chrome://suricattagmap/content/suricattagmap.xul
 
 content	suricattagmap	chrome/content/suricattagmap/
 
 skin	suricattagmap	classic/1.0	chrome/skin/classic/suricattagmap/
+
+locale	suricattagmap	en-US	chrome/locale/en-US/

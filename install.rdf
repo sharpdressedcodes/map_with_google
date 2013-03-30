@@ -3,16 +3,22 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-
+		
 		<em:id>{9F730E3B-E9A1-4AFD-A7FA-57B7124076EE}</em:id>
-		<em:name>Map with Google</em:name>
 		<em:version>0.7.2</em:version>
 		<em:type>2</em:type>
-		<em:description>Highlight an address on a web page, right click the mouse and select "Map with Google" from the context, a Google Maps tab will open with the searched location.</em:description>
-		<em:creator>Greg Kappatos</em:creator>
-		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
 		<em:iconURL>chrome://suricattagmap/skin/counts.png</em:iconURL>
 		<em:aboutURL>chrome://suricattagmap/content/about.xul</em:aboutURL>
+
+		<em:localized>
+		<Description>
+		<em:locale>en-US</em:locale>
+		<em:name>Map with Google</em:name>
+		<em:description>Highlight an address on a web page, right click the mouse and select "Search Google Maps" from the menu, a Google Maps tab will open with the searched location.</em:description>
+		<em:creator>Greg Kappatos</em:creator>
+		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
+		</Description>
+		</em:localized>
 
 		<em:targetApplication>
 			<Description>

@@ -3,7 +3,7 @@ var suricattagmap = new Object();
 
 suricattagmap.locateOnGMap = function(){
 
-	var textSelection=content.document.getSelection();
+  var textSelection=content.document.getSelection().toString();
 	//var cleanedSelection=textSelection.replace(/\s/g,' ').replace(/  {2,}/g,' ').replace(/ $|^ /g,'');
 
 	if (textSelection!=''){

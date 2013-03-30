@@ -1,0 +1,9 @@
+<!ENTITY dialog.title "Map with Google - About">
+<!ENTITY app.title "Map with Google">
+<!ENTITY app.version "v 0.7.2">
+<!ENTITY app.modified "Modified By:">
+<!ENTITY app.author "Greg Kappatos">
+<!ENTITY button.home "Home Page">
+<!ENTITY url.home "http://websiteconnect.com.au/">
+<!ENTITY button.email "E-mail">
+<!ENTITY email.url "mailto:forum@sharpdressedcodes.com">

@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 
+<!DOCTYPE overlay SYSTEM "chrome://suricattagmap/locale/suricattagmap.dtd" >
+
 <overlay id="celebritySearchOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="main.js"/>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="suricattagmap" label="Map with Google" accesskey="G" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();"/>
+    <menuitem id="suricattagmap" label="&map_with_google.label;" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();" accesskey="G"/>
   </popup>
 
 </overlay>
