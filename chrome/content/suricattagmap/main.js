@@ -5,8 +5,7 @@ suricattagmap.default_menutext='';
 
 suricattagmap.locateOnGMap = function(){
 
-  var textSelection=content.document.getSelection().toString();
-	//var cleanedSelection=textSelection.replace(/\s/g,' ').replace(/  {2,}/g,' ').replace(/ $|^ /g,'');
+  var textSelection=content.window.getSelection().toString();
 
 	if (textSelection!=''){
 		var url='http://maps.google.com/maps?q='+escape(textSelection);
@@ -29,7 +28,7 @@ window.addEventListener("contextmenu", function(e) {
     if (suricattagmap.default_menutext=='')
       suricattagmap.default_menutext=menu.getAttribute('label');
 
-    var textSelection=content.document.getSelection().toString();
+    var textSelection=content.window.getSelection().toString();
     var compactedText=textSelection.substr(0,15);
 
     if (compactedText.length!=textSelection.length)
