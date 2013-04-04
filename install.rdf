@@ -4,24 +4,28 @@
 
 	<Description about="urn:mozilla:install-manifest">
 		
-		<em:id>{9F730E3B-E9A1-4AFD-A7FA-57B7124076EE}</em:id>
-		<em:version>0.7.2</em:version>
+		<em:id>{74591c01-3a7f-469e-ad4e-5d8d708dc4c5}</em:id>
+		<em:version>0.7.3</em:version>
 		<em:type>2</em:type>
 		<em:iconURL>chrome://suricattagmap/skin/googlemaps36.png</em:iconURL>
 		<em:aboutURL>chrome://suricattagmap/content/about.xul</em:aboutURL>
 
-		<em:name>Map with Google</em:name>
+		<em:name>Search with Google</em:name>
 		<em:description>Highlight an address on a web page, right click the mouse and select "Search Google Maps" from the menu, a Google Maps tab will open with the searched location.</em:description>
 		<em:creator>Greg Kappatos</em:creator>
 		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
+		<em:developer>Jonas Brandon</em:developer>
+		<em:contributor>Alan Hietala</em:contributor>
 
 		<em:localized>
 		<Description>
 		<em:locale>en-US</em:locale>
-		<em:name>Map with Google</em:name>
+		<em:name>Search with Google</em:name>
 		<em:description>Highlight an address on a web page, right click the mouse and select "Search Google Maps" from the menu, a Google Maps tab will open with the searched location.</em:description>
 		<em:creator>Greg Kappatos</em:creator>
 		<em:homepageURL>http://websiteconnect.com.au</em:homepageURL>
+		<em:developer>Jonas Brandon</em:developer>
+		<em:contributor>Alan Hietala</em:contributor>
 		</Description>
 		</em:localized>
 

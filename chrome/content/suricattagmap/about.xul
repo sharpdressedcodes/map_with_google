@@ -17,6 +17,9 @@
   <text value="&app.title;" style="font-weight: bold; font-size: x-large;"/>
   <text value="&app.version;"/>
   <separator class="thin"/>
+  <text value="&app.created;" style="font-weight:bold;"/>
+  <text value="&app.creator;" class="url" onclick=" window.open('http://jonasbrandon.com'); window.close();"/>
+  <separator class="thin"/>
   <text value="&app.modified;" style="font-weight: bold;"/>
   <text value="&app.author;" class="url"
         onclick="window.open('http://websiteconnect.com.au'); window.close();"/>

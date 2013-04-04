@@ -9,7 +9,7 @@
   <script type="application/x-javascript" src="main.js"/>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="suricattagmap" label="&map_with_google.label;" insertafter="context-sep-selectall" oncommand="suricattagmap.locateOnGMap();" accesskey="G" class="menuitem-iconic"/>
+    <menuitem id="suricattagmap" label="&map_with_google.label;" insertafter="context-searchselect" oncommand="suricattagmap.locateOnGMap();" accesskey="G" class="menuitem-iconic"/>
   </popup>
 
 </overlay>
