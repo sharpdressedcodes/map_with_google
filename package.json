@@ -1,0 +1,11 @@
+{
+    "name": "map-with-google",
+    "title": "Map With Google",
+    "id": "jid1-loW864ytUiNY7Q",
+    "description": "Highlight an address on a web page, right click the mouse and select \"Search Google Maps\" from the menu, a Google Maps tab will open with the searched location.",
+    "author": "Greg Kappatos (http://websiteconnect.com.au/)",
+    "homepage": "http://websiteconnect.com.au/",
+    "license": "MPL 2.0",
+    "version": "1.0",
+    "icon": "data/map-with-google-36.png"
+}

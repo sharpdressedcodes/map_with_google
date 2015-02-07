@@ -1,4 +1,3 @@
-*.png
 *.xpi
-*.zip
-_assets/
+.idea/*
+*.png
