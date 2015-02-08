@@ -1,4 +1,8 @@
+const MAP_URL = 'http://maps.google.com/maps?q=';
+const { Ci } = require('chrome');
+
 var contextMenu = require('sdk/context-menu');
+var windowUtils = require('sdk/window/utils');
 var self = require('sdk/self');
 
 var menuItem = contextMenu.Item({
@@ -6,5 +10,34 @@ var menuItem = contextMenu.Item({
     label: 'Search Google Maps',
     image: self.data.url('map-with-google-16.png'),
     context: contextMenu.SelectionContext(),
-    contentScriptFile: self.data.url('map-with-google.js')
+    contentScriptFile: self.data.url('map-with-google.js'),
+    onMessage: function(text){
+        var browser = getBrowser();
+        if (browser !== null){
+            var tab = browser.addTab(MAP_URL + encodeURIComponent(text), {
+                relatedToCurrent: true
+            });
+        }
+    }
 });
+
+function getBrowser(){
+
+    var result = null;
+    var window = windowUtils.getMostRecentBrowserWindow();
+
+    if (typeof gBrowser === 'undefined'){
+        var mainWindow = window.QueryInterface(Ci.nsIInterfaceRequestor)
+            .getInterface(Ci.nsIWebNavigation)
+            .QueryInterface(Ci.nsIDocShellTreeItem)
+            .rootTreeItem
+            .QueryInterface(Ci.nsIInterfaceRequestor)
+            .getInterface(Ci.nsIDOMWindow);
+        result = mainWindow.gBrowser;
+    } else {
+        result = gBrowser;
+    }
+
+    return result;
+
+}

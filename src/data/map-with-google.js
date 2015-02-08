@@ -9,17 +9,11 @@ self.on('context', function(){
 });
 
 self.on('click', function(){
-
-    // Using plain old window.open() here because I couldn't find a way to open this
-    // right next to the current tab using sdk/tabs.
-    window.open('http://maps.google.com/maps?q=' + encodeURIComponent(getSelectedText()));
-
+    self.postMessage(getSelectedText());
 });
 
 function getSelectedText(){
-
     return window.getSelection().toString().trim();
-
 }
 
 function wrapText(text){
