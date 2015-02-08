@@ -1,6 +1,4 @@
-const MAP_URL = 'http://maps.google.com/maps?q=';
-const { Ci } = require('chrome');
-
+var { Ci } = require('chrome');
 var contextMenu = require('sdk/context-menu');
 var windowUtils = require('sdk/window/utils');
 var self = require('sdk/self');
@@ -14,7 +12,7 @@ var menuItem = contextMenu.Item({
     onMessage: function(text){
         var browser = getBrowser();
         if (browser !== null){
-            var tab = browser.addTab(MAP_URL + encodeURIComponent(text), {
+            var tab = browser.addTab('http://maps.google.com/maps?q=' + encodeURIComponent(text), {
                 relatedToCurrent: true
             });
         }
