@@ -1,10 +1,10 @@
-self.on('context', function(){
+self.on('context', function(node){
 
     var text = wrapText(getSelectedText());
 
     return text === null || text === '' ?
         false :
-        'Search Google Maps for "' + text + '"';
+        '____Search Google Maps for "' + text + '"';
 
 });
 
