@@ -9,6 +9,7 @@ const MENU_SCRIPT = 'map-with-google.js';
 var { Ci } = require('chrome');
 var { viewFor } = require('sdk/view/core');
 var contextMenu = require('sdk/context-menu');
+var tabs = require('sdk/tabs');
 var windowUtils = require('sdk/window/utils');
 var self = require('sdk/self');
 var windows = require('sdk/windows').browserWindows;
@@ -24,12 +25,13 @@ var menuItemOptions = {
     context: contextMenu.SelectionContext(),
     contentScriptFile: self.data.url(MENU_SCRIPT),
     onMessage: function(text){
-        var browser = getBrowser();
-        if (browser !== null){
-            var tab = browser.addTab(MAPS_URL + encodeURIComponent(text), {
-                relatedToCurrent: true
-            });
-        }
+        var index = tabs.activeTab.index;
+        tabs.open({
+            url: MAPS_URL + encodeURIComponent(text),
+            onOpen: function (tab) {
+                tab.index = index+1;
+            }
+        });
     }
 };
 
@@ -66,20 +68,6 @@ function onCloseWindow(window){
             break;
         }
     }
-}
-
-function getBrowser(){
-
-    var result = null;
-
-    if (typeof gBrowser === 'undefined'){
-        result = getMainWindow().gBrowser;
-    } else {
-        result = gBrowser;
-    }
-
-    return result;
-
 }
 
 function getMainWindow(){
